@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uzduotis07", "Uzduotis07\Uz
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uzduotis08", "Uzduotis08\Uzduotis08.csproj", "{D7597990-6D44-4FFB-B7BC-4E090704C63C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uzduotis09", "Uzduotis09\Uzduotis09.csproj", "{3DF28D8B-E3D9-4160-906E-371A152778B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uzduotis10", "Uzduotis10\Uzduotis10.csproj", "{041CB7A2-231F-4576-8D7B-3FF12316DAB6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,9 +39,21 @@ Global
 		{D7597990-6D44-4FFB-B7BC-4E090704C63C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7597990-6D44-4FFB-B7BC-4E090704C63C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7597990-6D44-4FFB-B7BC-4E090704C63C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DF28D8B-E3D9-4160-906E-371A152778B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DF28D8B-E3D9-4160-906E-371A152778B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DF28D8B-E3D9-4160-906E-371A152778B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DF28D8B-E3D9-4160-906E-371A152778B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{041CB7A2-231F-4576-8D7B-3FF12316DAB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{041CB7A2-231F-4576-8D7B-3FF12316DAB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{041CB7A2-231F-4576-8D7B-3FF12316DAB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{041CB7A2-231F-4576-8D7B-3FF12316DAB6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3DF28D8B-E3D9-4160-906E-371A152778B6} = {0E405BE7-5061-476E-89B4-69030C2D35B3}
+		{041CB7A2-231F-4576-8D7B-3FF12316DAB6} = {0E405BE7-5061-476E-89B4-69030C2D35B3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F5ECB238-E813-4399-A5B3-322AF8EBC10D}
