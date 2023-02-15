@@ -75,7 +75,7 @@ namespace Uzduotis17
                 Console.WriteLine("{0} + {1} = {2}", skaicius1, skaicius2, (skaicius1 + skaicius2));
                 Console.WriteLine("{0} - {1} = {2}", skaicius1, skaicius2, (skaicius1 - skaicius2));
                 Console.WriteLine("{0} * {1} = {2}", skaicius1, skaicius2, (skaicius1 * skaicius2));
-                Console.WriteLine("{0} / {1} = {2}", skaicius1, skaicius2, (double)(skaicius1 / skaicius2));
+                Console.WriteLine("{0} / {1} = {2}", skaicius1, skaicius2, (skaicius1 / skaicius2));
                 Console.WriteLine();
                 Console.WriteLine("Norite tęsti skaičiavimus (Taip/Ne): ");
                 atsTaip = Console.ReadLine();
