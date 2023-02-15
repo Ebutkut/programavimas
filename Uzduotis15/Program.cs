@@ -26,8 +26,9 @@ namespace Uzduotis15
 
             for (int i = 0; i < 15; i += 2)
             {
-                Console.WriteLine(i);
+                Console.Write(i);
             }
+            
             Console.WriteLine();
 
             /*
@@ -39,8 +40,9 @@ namespace Uzduotis15
 
             for (int i = 1; i < 20; i += 3)
             {
-                Console.WriteLine("[{0}]", + i);
+                Console.Write("[{0}]", + i);
             }
+
             Console.WriteLine();
 
             /*
