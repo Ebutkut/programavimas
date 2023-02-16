@@ -11,7 +11,7 @@ namespace Uzduotis16
            
             int suma = 0;
 
-            for (int i = 1; i < 101; i++)
+            for (int i = 1; i <= 100; i++)
             {
                 suma += i;
             }
@@ -22,7 +22,7 @@ namespace Uzduotis16
 
             suma = 0;
 
-            for (int i = 20; i < 41; i++)
+            for (int i = 20; i <= 40; i++)
             {
                 if (i % 2 == 0)
                 {
@@ -36,9 +36,9 @@ namespace Uzduotis16
 
             suma = 0;
 
-            for (int i = 30; i < 61; i++)
+            for (int i = 30; i <= 60; i++)
             {
-                if (i% 2== 1)
+                if (i% 2 != 0)
                 {
                     suma += i;
                 }
