@@ -12,7 +12,7 @@ namespace Uzduotis15
              * Kiekvieną skaičių išvesti skirtingoje eilutėje.
              */
 
-            for(int i = 0; i < 11; i++)
+            for(int i = 0; i <= 10; i++)
             {
                 Console.WriteLine(i);
             }
@@ -51,7 +51,7 @@ namespace Uzduotis15
              * jei taip – tai šį skaičių išvesti.
              */
 
-            for (int i = 1; i < 11; i++)
+            for (int i = 1; i <= 10; i++)
             {
                 if (i %2 == 0)
                 {
