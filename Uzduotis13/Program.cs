@@ -51,22 +51,21 @@ namespace Uzduotis13
              */
 
             Console.WriteLine("Įveskite gyvūno rūšį: ");
-            ivedimas = Console.ReadLine();
-            Console.WriteLine();
+            string gyvunas = Console.ReadLine();
+            
 
-            switch (ivedimas)
+            switch (gyvunas)
             {
-                case "šuo":
+                case "suo":
                     Console.WriteLine("Teisingai, įvestas gyvūnas - šuo");
                     break;
-                case "katė":
+                case "kate":
                     Console.WriteLine("Teisingai, įvestas gyvūnas - katė");
                     break;
-                case "žiurkėnas":
+                case "ziurkenas":
                     Console.WriteLine("Teisingai, įvestas gyvūnas - žiurkėnas");
                     break;
             }
-
         }
     }
 }
