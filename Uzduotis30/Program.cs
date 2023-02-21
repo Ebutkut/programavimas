@@ -31,17 +31,18 @@ namespace Uzduotis30
             return number1 * number2;
         }
 
-        public int division(int number1, int number2)
+        public double division(int number1, int number2)
         {
-            return number1 / number2;
+            return (double) number1 / number2;
 
         }
 
-            public static void Main(string[] args)
+            static void Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
 
-            int number1, number2, sum, subtraction, multiplication, division;
+            int number1, number2, sum, subtraction, multiplication;
+            double division;
             Program p1 = new Program();
 
             Console.WriteLine("Įvesti du skaičius: ");
