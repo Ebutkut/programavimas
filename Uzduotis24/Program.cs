@@ -24,18 +24,18 @@ namespace Uzduotis24
             Console.Write("Kiek duomenų norite įvesti? ");
             int kiek = Convert.ToInt32(Console.ReadLine());
 
-            string[] duomenys = new string[kiek];
+            int[] duomenys = new int[kiek];
 
-            for (int i = 0; i < duomenys.Length; i++)
+            for (int i = 0; i < kiek; i++)
             {
                 Console.Write("Įveskite duomenis: ");
-                duomenys[i] = Console.ReadLine();
+                duomenys[i] = Convert.ToInt32(Console.ReadLine());
             }
             Console.WriteLine();
 
             int suma1 = 0;
 
-            for (int i = 0; i < duomenys.Length; i++)
+            for (int i = 0; i < kiek; i++)
             {
                 if (i % 2 == 0)
                 {
@@ -48,7 +48,7 @@ namespace Uzduotis24
 
             int suma2 = 0;
 
-            for (int i = 0; i < duomenys.Length; i++)
+            for (int i = 0; i < kiek; i++)
             {
                 if (i % 2 != 0)
                 {
