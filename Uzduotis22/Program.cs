@@ -22,25 +22,19 @@ namespace Uzduotis22
 
             Console.WriteLine("Savaitės temperatūrų rodmenys: ");
             
-            int[] temp = new int[7];
-            temp[0] = 5;
-            temp[1] = 4;
-            temp[2] = -1;
-            temp[3] = 2;
-            temp[4] = 3;
-            temp[5] = 2;
-            temp[6] = -1;
+            int[] tempArray = new int[7] {5, 4, -1, 2, 3, 2, -1};
+            
 
-            foreach (int tempS in temp)
+            foreach (int temp in tempArray)
             {
-                Console.Write(tempS + " ");
+                Console.Write(tempArray + " ");
             }
 
             Console.WriteLine(); 
             
-            int min = temp[0];
+            int min = tempArray[0];
 
-            foreach (int tempMin in temp)
+            foreach (int tempMin in tempArray)
             {
                 if (tempMin < min)
                 {
@@ -50,9 +44,9 @@ namespace Uzduotis22
 
             Console.WriteLine($"Žemiausia temperatūra: '{min}'");
 
-            int max = temp[0];
+            int max = tempArray[0];
 
-            foreach (int tempMax in temp)
+            foreach (int tempMax in tempArray)
             {
                 if (tempMax > max)
                 {
@@ -62,11 +56,11 @@ namespace Uzduotis22
 
             Console.WriteLine($"Didžiausia temperatūra: '{max}'");
 
-            double average = temp.Average();
-            Console.WriteLine($"Vidurkis: '{temp.Average()}'");
+            double average = tempArray.Average();
+            Console.WriteLine($"Vidurkis: '{tempArray.Average()}'");
 
             int count = 0;
-            foreach (int tempZemiau in temp)
+            foreach (int tempZemiau in tempArray)
             {
                 if (tempZemiau < average)
                     count++;
@@ -74,7 +68,7 @@ namespace Uzduotis22
             Console.WriteLine($"Temperatūrų, esančių žemiau už vidurkį, kiekis: '{count}'");
 
             count = 0;
-            foreach (int tempAuksciau in temp)
+            foreach (int tempAuksciau in tempArray)
             {
                 if (tempAuksciau > average)
                     count++;
@@ -99,9 +93,9 @@ namespace Uzduotis22
             pazymiai[3] = 10;
             pazymiai[4] = 7;
             
-            foreach (int pazymiaiS in pazymiai)
+            foreach (int pazymys in pazymiai)
             {
-                Console.Write(pazymiaiS + " ");
+                Console.Write(pazymys + " ");
             }
             Console.WriteLine();
             
@@ -118,24 +112,23 @@ namespace Uzduotis22
             Console.WriteLine($"Geriausias pažymys: '{max}'");
 
             count = 0;
-            foreach (int gavoMax in pazymiai )
+            foreach (int pazymys in pazymiai )
             {
-                if (gavoMax == 10)
+                if (pazymys == 10)
                     count++;
             }
             Console.WriteLine($"Dešimtukus gavo '{count}' mokinys");
 
              count = 0;
-            foreach (int gavoNeig in pazymiai)
+            foreach (int pazymys in pazymiai)
             {
-                if (gavoNeig < 4)
+                if (pazymys < 4)
                     count++;
             }
             Console.WriteLine($"Neigiamą pažymį gavo '{count}' mokinių");
 
             average = pazymiai.Average();
             Console.WriteLine($"Pažymių vidurkis: '{pazymiai.Average()}'");
-
         }
     }
 }
