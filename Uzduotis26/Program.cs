@@ -24,37 +24,40 @@ namespace Uzduotis26
 
             Console.WriteLine("Atsitiktiniai skaičiai: ");
 
+            List<int> skaiciai = new List<int>();
             Random rand = new Random();
-            int[] random = new int[100];
-            for (int i = 0; i < random.Length ; i++)
+            int kiekis = rand.Next(1, 100);
+
+            for (int i = 0; i < kiekis; i++)
             {
-                random[i] = rand.Next(1,100);
-                Console.Write("{0,3}   ", random[i]);
+                kiekis = rand.Next(1, 101);
+                Console.Write(" {0,3}     ", kiekis);
             }
 
             Console.WriteLine();
 
-            int min = random.Min();
-            int max = random.Max();
-            double average = random.Average();
-            Console.WriteLine($"Mažiausias skaičius: '{min}'");
-            Console.WriteLine($"Didžiausias skaičius: '{max}'");
-            Console.WriteLine($"Vidurkis: '{average}'");
-            
+            int min = skaiciai.Min();
+            int max = skaiciai.Max();
+            double average = skaiciai.Average();
+
             int count = 0;
-            foreach (int i in random)
+            foreach (int skaicius in skaiciai)
             {
-                if (i < average) 
-                count++;
+                if (skaicius < average)
+                    count++;
             }
             Console.WriteLine($"Žemesnių už vidurkį skaičius: '{count}'");
 
             int sum = 0;
-            foreach (int i in random)
+            foreach (int skaicius in skaiciai)
             {
-                if (i % 2 == 0)
-                    sum += i;
+                if (skaicius % 2 == 0)
+                    sum += skaicius;
             }
+
+            Console.WriteLine($"Mažiausias skaičius: '{min}'");
+            Console.WriteLine($"Didžiausias skaičius: '{max}'");
+            Console.WriteLine($"Vidurkis: '{average}'");
             Console.WriteLine($"Lyginių skaičių suma: '{sum}'");
             Console.WriteLine();
 
