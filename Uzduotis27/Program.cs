@@ -22,9 +22,9 @@ namespace Uzduotis27
             Console.WriteLine(string.Join (", ", words));
             Console.WriteLine();
 
-            string[] word = words.ToArray ();
-            string longest = word.OrderByDescending(n => n.Length).First();
-            string shortest = word.OrderByDescending(n => n.Length).Last();
+            words = words.OrderByDescending(n => n.Length).ToList();
+            string longest = words.First();
+            string shortest = words.Last();
 
             Console.WriteLine($"Ilgiausias žodis:'{longest}' sudarytas iš {longest.Count()} raidžių");
             Console.WriteLine($"Trumpiausias žodis: '{shortest}' sudarytas iš {shortest.Count()} raidžių ");
